@@ -14,7 +14,7 @@ for (let record of mainTableRecords.records) {
 
     //Replace "2020 Volume" with columnn name which value should be returned
     for (let rangeRecord of lookupRangeRecords.records) {
-        if (rangeRecord.getCellValue("CompanyID") === lookupValue) {
+        if (rangeRecord.getCellValue("CompanyID") == lookupValue) {
             let returnValue = rangeRecord.getCellValue("2020 Volume");
 
             //Replace "2020 Volume" with column name from mainTable which should contain the link
